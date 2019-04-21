@@ -1218,4 +1218,12 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    
+    #congratsHeader{
+        margin-top: auto;
+    }
+    
+    #congratsAnim{
+        margin-top: 5rem;
+    }
 }

@@ -18,19 +18,19 @@
     
 	<body>
         
-		<button class="floatingTop">
+		<button class="floatingTop floatingButton">
 			<a class="floatingTopText" href="#top">↑</a>
 		</button>
         
-		<button class="floatingLock">
+		<button class="floatingLock floatingButton">
 			<a class="floatingLockText" id="scrollLock" onclick="scrollLock()">🔒</a>
 		</button>
         
-		<button class="floatingCSS">
+		<button class="floatingCSS floatingButton">
 			<a class="floatingCSSText" onclick="enterMenu()">🖌️</a>
 		</button>
         
-		<button class="floatingInfo">
+		<button class="floatingInfo floatingButton">
 			<a class="floatingInfoText" onclick="enterPopup()">🛈</a>
 		</button>
         
@@ -80,10 +80,10 @@
 					</a>
 				</div>
 			<div class="galleryImageContainer" id="galleryImageContainer">
-				<img src="img/galleryOne.jpg" class="galleryImage">
-				<img src="img/galleryTwo.jpg" class="galleryImage">
-				<img src="img/galleryThree.jpg" class="galleryImage">
-				<img src="img/galleryFour.jpg" class="galleryImage">
+				<img src="img/galleryOne.jpg" class="galleryImage" id="galleryCB2MainImage">
+				<img src="img/galleryTwo.jpg" class="galleryImage" id="galleryCB2NonmainImage">
+				<img src="img/galleryThree.jpg" class="galleryImage" id="galleryCB2NonmainImage">
+				<img src="img/galleryFour.jpg" class="galleryImage" id="galleryCB2NonmainImage">
 			</div>
 		</div>
         
@@ -173,7 +173,7 @@
 		</div>
         
         <div class="congrats">
-            <p class="headText" id="congratsHeader"> CONGRATULATIONS! </p>
+            <p class="headText" id="congratsHeader"> CONGRATS! </p>
             <p id="congratsSubheadText"> At least, that's what we would say if you actually pressed the button under one of the above travel destinations. </p>
             <div id="infoNotification">
                 <p class="infoText">🛈 Your personal jet's on its way. 🛈</p>

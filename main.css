@@ -1159,6 +1159,7 @@ body{
     .coverImage{
         clip-path: none;
 	   -webkit-clip-path: none;
+        border-radius: 1rem;
     }
     
     .coverText{
@@ -1175,9 +1176,11 @@ body{
     }
     
     #cardStore{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         position: static;
-        padding: auto;
         margin: auto;
         width: 50%;
     }
@@ -1225,5 +1228,9 @@ body{
     
     #congratsAnim{
         margin-top: 5rem;
+    }
+    
+    #gallery{
+        margin-top: auto;
     }
 }

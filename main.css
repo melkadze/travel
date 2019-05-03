@@ -1154,7 +1154,7 @@ body{
 @media only screen and (max-width: 1080px) {
     
     html{
-        font-size: 100%;
+        font-size: 75%;
     }
     
     .coverBlur{

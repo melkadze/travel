@@ -339,12 +339,14 @@
 html{
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	height: 100%;
 }
 
 body{
 	background-color: var(--color-background);
 	font-family: 'Product Sans';
 	overflow-x: hidden;
+	height: 100%;
 }
 
 .cover{

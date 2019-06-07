@@ -30,6 +30,10 @@
 			<a class="floatingCSSText" onclick="enterMenu()">🖌️</a>
 		</button>
         
+		<button class="floatingSounds floatingButton">
+			<a class="floatingSoundsText" onclick="enterAudio()">🔊</a>
+		</button>
+        
 		<button class="floatingInfo floatingButton">
 			<a class="floatingInfoText" onclick="enterPopup()">🛈</a>
 		</button>
@@ -92,7 +96,7 @@
             <p class="cardSubheadText" id="cardSubheadText"> They're all good choices, since travel to any of these supports our economy. </p>
             <div class="cardstore" id="cardStore">
                 <div class="card">
-                    <div class="card-front card-side">	
+                    <div class="card-front card-side">
                         <img src="img/cardOne.jpg" class="cardImage">
                         <p class="cardText" id="cardLeftText"> Mtskheta </p>
                         <div class="buttonContainer buttonCards">
@@ -194,7 +198,7 @@
                 <p class="creditsSubheadText">Services</p>
                 <p class="creditsNameText">Linters, Prefixers, and Stack Overflow</p>
                 <p class="creditsSubheadText">Stuff that's not mine</p>
-                <p class="creditsNameText">The font, plane animation, and images</p>
+                <p class="creditsNameText">The font, plane animation, music, and images</p>
 				<div class="buttonContainer buttonContainerCredits">
 					<a>
 						<button id="firstButton" class="button" onclick="exitPopup()">
@@ -204,6 +208,43 @@
 				</div>
             </span>
         </div>
+        
+        <div class="creditsPopupBackground" id="audioPopupBackground">
+            <span class="creditsPopup">
+                <p class="creditsHeader">Audio</p>
+                <div class="audioFlex">
+                    <div class="audioItem key" data-key="80">
+                        <kbd>P</kbd>
+                        <img src="img/audioOne.jpg" class="audioImage">
+                        <p class="audioText"> PRESS <span class="audioLetter">P</span> </p>
+                        <p class="audioSubtext"> for <span class="audioLetter">patriotic</span> noises </p>
+                    </div>
+                    <div class="audioItem key" data-key="76">
+                        <kbd>L</kbd>
+                        <img src="img/audioTwo.jpg" class="audioImage">
+                        <p class="audioText"> PRESS <span class="audioLetter">L</span> </p>
+                        <p class="audioSubtext"> for our angelic <span class="audioLetter">language</span> </p>
+                    </div>
+                    <div class="audioItem key" data-key="77">
+                        <kbd>M</kbd>
+                        <img src="img/audioThree.jpg" class="audioImage">
+                        <p class="audioText"> PRESS <span class="audioLetter">M</span> </p>
+                        <p class="audioSubtext"> for the distant <span class="audioLetter">mongolian</span> music </p>
+                    </div>
+                </div>
+				<div class="buttonContainer buttonContainerCredits">
+					<a>
+						<button id="firstButton" class="button" onclick="exitAudio()">
+							<span class="buttonSpan">It slaps!</span>
+						</button>
+					</a>
+				</div>
+            </span>
+        </div>
+        
+        <audio data-key="76" src="sounds/soundTwo.mp3"></audio>
+        <audio data-key="77" src="sounds/soundThree.mp3"></audio>
+        <audio data-key="80" src="sounds/soundOne.mp3"></audio>
         
 	</body>
     

@@ -109,10 +109,24 @@ function enterPopup() {
 	$('#creditsPopupBackground').removeClass('creditsPopupInactiveEnd');
 }
 
+function enterAudio() {
+	$('#audioPopupBackground').addClass('creditsPopupActive');
+	$('#audioPopupBackground').removeClass('creditsPopupInactive');
+	$('#audioPopupBackground').removeClass('creditsPopupInactiveEnd');
+}
+
 function exitPopup() {
 	$('#creditsPopupBackground').removeClass('creditsPopupActive');
 	$('#creditsPopupBackground').addClass('creditsPopupInactive');
     setTimeout(function () { 
 	$('#creditsPopupBackground').addClass('creditsPopupInactiveEnd');
+    }, 400);
+}
+
+function exitAudio() {
+	$('#audioPopupBackground').removeClass('creditsPopupActive');
+	$('#audioPopupBackground').addClass('creditsPopupInactive');
+    setTimeout(function () { 
+	$('#audioPopupBackground').addClass('creditsPopupInactiveEnd');
     }, 400);
 }

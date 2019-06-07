@@ -608,7 +608,7 @@ body{
 	position: fixed;
 	float: right;
 	right: 15rem;
-	bottom: 31rem;
+	bottom: 39rem;
 	width: 7rem;
 	height: 7rem;
 	background-color: var(--color-primary);
@@ -840,7 +840,7 @@ body{
 	position: fixed;
 	float: right;
 	right: 15rem;
-	bottom: 15rem;
+	bottom: 31rem;
 	width: 7rem;
 	height: 7rem;
 	background-color: var(--color-primary);
@@ -1043,6 +1043,45 @@ body{
 	        filter: grayscale(100%);
 }
 
+.floatingSounds {
+	position: fixed;
+	float: right;
+	right: 15rem;
+	bottom: 15rem;
+	width: 7rem;
+	height: 7rem;
+	background-color: var(--color-primary);
+	border-color: var(--color-tertiary);
+	border-style: solid;
+	border-radius: 100rem;
+	z-index: 999;
+	opacity: 0.5;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	cursor: pointer;
+}
+
+.floatingSounds:hover{
+	opacity: 1;
+}
+
+.floatingSoundsText{
+	text-decoration: none;
+	color: var(--color-secondary);
+	font-size: 3rem;
+    margin: auto;
+	text-align: center;
+	display: block;
+	-webkit-animation-name: spinIn;
+	        animation-name: spinIn;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+}
+
 .creditsPopupBackground{
 	background-image: -webkit-gradient(
 		linear,
@@ -1144,6 +1183,52 @@ body{
     margin: auto;
     margin-top: 6rem;
     bottom: 3rem;
+}
+
+.audioFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.audioItem{
+    margin: 2vh;
+	height: 50rem;
+	width: 30rem;
+	-webkit-box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+	        box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+	text-align: center;
+	background-color: whitesmoke;
+	border-radius: 3rem;
+}
+
+.audioImage {
+	width: 13vw;
+	height: 13vw;
+	border-radius: 150%;
+	margin: 1rem 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.audioText {
+	text-align: center;
+	color: grey;
+	text-transform: uppercase;
+	font-size: 7rem;
+    margin: 1rem;
+}
+
+.audioSubtext {
+    margin: 1rem;
+	text-align: center;
+	color: darkgrey;
+	text-transform: uppercase;
+	font-size: 3rem;
+}
+
+.audioLetter{
+    color: cadetblue;
 }
 
 /*  the next block/line is the animation,
